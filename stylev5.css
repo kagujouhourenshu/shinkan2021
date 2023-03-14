@@ -1,0 +1,727 @@
+@charset "UTF-8";
+
+body           {margin: 0;
+                font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro',
+                            sans-serif}
+                            
+/* リンク */
+a { color: #999966; }
+
+                            
+/* サイト名*/
+.thema h1 a    {color: #000000;
+                text-decoration: none}
+                
+.thema h1       {margin: 0;
+                font-size: 30px}
+                
+.thema img   {border: none}                
+                
+/*パンくずリスト*/
+.topichole      {font-size: 12px;
+                padding-left: 15px}
+
+                
+/*ヘッダー画像*/
+.topimage        {max-width: 100%;
+                 height: auto;
+                 vertical-align: bottom}                                                                             
+                
+/*キャッチコピー*/
+.chat       {margin: 0;
+             padding: 15px;
+             background-color: rgba(255,255,255,0.7);
+             font-size: 28px}                
+                
+/*ヘッダー画像にキャッチコピーを重ねる*/
+.top         {position: relative}
+
+.chat       {position: absolute;
+              bottom: 7%;
+              left: 3%}  
+                
+/*表示中のページを色づけ*/
+.current a
+              {background-color: #dddddd}             
+                
+/*概要*/
+.gaiyou a    {display: block;
+              background-color: #222222c4;
+              color: #ffffff;
+              text-align: center;
+              text-decoration: none}
+              
+.gaiyou a:hover
+              {opacity: 0.8} 
+              
+.gaiyou i     {display: block;
+              padding-top: 40px;
+              padding-bottom: 40px;
+              font-size: 38px}                           
+
+.gaiyou .fa-building
+              {background-color: #bbd347}
+              
+.gaiyou .fa-ad
+              {background-color: #773795} 
+
+.gaiyou .fa-palette
+              {background-color: #fc4848}
+
+.gaiyou .fa-tasks
+              {background-color: #f6e23a}
+              
+.gaiyou .fa-yen-sign
+              {background-color: #dc41df}
+              
+.gaiyou .fa-paperclip
+              {background-color: #60ba27}
+              
+.gaiyou .fa-database
+              {background-color: #63bafd}                                         
+
+.gaiyou h1   {margin-top: 0;
+             margin-bottom: 0;
+             padding-top: 5px;
+             padding-bottom: 5px;
+             font-size: 20px;
+             font-weight: normal}
+             
+.gaiyou p    {margin-top: 0;
+             margin-bottom: 0;
+             padding-top: 15px;
+             padding-bottom: 15px;
+             background-color: #259caf;
+             font-size: 12px}                   
+                
+/*更新情報*/
+.update         {padding: 20px;
+                  border: solid 5px #dddddd;
+                  height: 12.5em;
+                  overflow: scroll;}
+
+.update h1     {margin-top: 0;
+               margin-bottom: 5px;
+               font-size: 18px;
+               color: #666666}
+
+.update ul     {margin: 0;
+               padding: 0;
+               list-style: none}
+             
+.update li a   {display: block;
+               padding: 5px;
+               border-bottom: dotted 2px #dddddd;
+               color: #000000;
+               font-size: 14px;
+               text-decoration: none}
+             
+.update li a:hover
+               {background-color: #eeeeee}             
+             
+.update time   {color: #888888;
+               font-weight: bold}             
+             
+.update a:after
+               {content: "";
+               display: block;
+               clear: both}
+             
+.update time   {float: left;
+               width: 60px}
+             
+.update .text   {float: none;
+                width: auto;
+                margin-left: 60px}                        
+
+/*Twitter timeline表示*/
+.updatet        {padding: 20px;
+                  height: 14em;
+                  overflow: scroll;}
+
+/*SNS メニュー*/
+.follow ul    {margin: 0;
+              padding: 0;
+              list-style: none}
+              
+.follow li a  {display: block;
+              margin-bottom: 10px;
+              padding: 10px;
+              border-radius: 4px;
+              color: #ffffff;
+              font-size: 14px;
+              text-decoration: noone}
+              
+.follow li a:hover
+              {opacity: 0.8}                           
+             
+.follow-tw    {background-color: #63bafb}
+.follow-ig    {background-color: #833AB4}             
+.follow-yt    {background-color: #ef071b}   
+.follow-li    {background-color: #13bf00}     
+             
+.follow i     {margin-right: 10px;
+              font-size: 24px;
+              vertical-align: middle}   
+
+.follow-info {
+	position: relative;
+	background: #dddddd;
+}
+.follow-info:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 221, 221, 0);
+	border-top-color: #dddddd;
+	border-width: 15px;
+	margin-left: -15px;
+} 
+
+/*補足説明*/
+.follow-info  {margin-top: 0;
+              margin-bottom: 20px;
+              padding: 10px;
+              background-color: #dddddd;
+              font-size: 14px;
+              text-align: center}  
+
+/*表*/
+.shoukai table        {
+
+              border: 1px solid #CCCCCC;
+              width: 100%;
+              border-collapse: collapse;
+              margin: 0;}
+
+.shoukai table th,
+.shoukai table td     {border: 1px solid #CCCCCC;
+             padding: 10px 8px;    }
+             
+.shoukai table td
+             {line-height: 1.7;}                
+             
+
+.box7 .shoukai table th {
+               background-color: #EEEEEE;
+               text-align: center;
+               line-height: 1.429;
+               width: 20%;}
+               
+.shoukai table caption {
+               text-align: left;
+               font-weight: bold;
+               } 
+               
+/*局紹介*/
+.shoukai h1      {margin-top: 0;
+              margin-bottom: 20px;
+              padding-left: 20px;
+              font-size: 36px;
+              font-weight: normal}
+              
+.designT   {border-left: solid 20px #ff2764}     
+.kouhouT   {border-left: solid 20px #7e6ea4}  
+.somuT     {border-left: solid 20px #bbd347}  
+.kikakuT   {border-left: solid 20px #fff156}      
+.RFCT      {border-left: solid 20px #eb6e9d}  
+.shinkanT  {border-left: solid 20px #eb6e9d}     
+.subT      {border-left: solid 20px #eb6e9d}  
+.askT      {border-left: solid 20px #eb6e9d}  
+        
+              
+.shoukai h2      {margin-top: 50px;
+              margin-bottom: 20px;
+              border-bottom: solid 1px #dddddd;
+              font-size: 28px;
+              font-weight: normal}
+                       
+              
+.shoukai h2 i    {margin-right: 7px;
+              color: #888888}                            
+              
+.shoukai p       {width: 100%;
+              margin-top: 0;
+              margin-bottom: 20px;
+              line-height: 1.429}                          
+             
+.shoukai .lead   {max-width: 100%;
+              font-size: 20px;
+              color: #404040;
+              text-indent: 0.7em;}
+              
+.imsent p     {line-height: 1.7;
+               text-indent: 1em;}              
+              
+.shoukaiimg      {max-width: 100%;
+              height: auto;
+              margin-bottom: 20px}    
+
+.box10-1     {float: left;
+              width: 33%;
+              padding-bottom: 20px;}
+              
+.box10-2     {float: left;
+              width: 33%;
+              padding-bottom: 20px;}
+              
+.box10-3     {float: left;
+              width: 33%;
+              padding-bottom: 20px;}              
+              
+.box11-1, .box11-2, .box11-3, .box11-4, .box11-5, .box11-6
+              {float: left;
+              width: 50%;}  
+              
+
+              
+/*RFC ヘッド*/
+.imhead      {font-size: 20px;
+              font-style: italic;
+              line-height: 1.7;
+              text-indent: 1em;}
+
+/*パンクリスト*/
+.bread        {margin-bottom: 20px}
+
+.bread ol     {margin: 0;
+              padding: 0;
+              list-style: none}
+              
+.bread li a   {display: inline-block;
+              padding: 5px;
+              color: #000000;
+              font-size: 14px;
+              text-decoration: none}
+              
+.bread li a:hover
+              {background-color: #eeeeee}
+              
+.bread ol:after
+              {content: "";
+              display: block;
+              clear: both}
+              
+.bread li     {float: left;
+              width: auto}
+              
+.bread li:after
+              {content: '\003e';
+              margin-left: 10px;
+              margin-right: 10px;
+              color: #888888}
+
+/*サイドメニュー*/
+.sidemenu     {border: solid 6px #dddddd}
+
+.sidemenu h1  {margin: 0;
+              padding: 10px;
+              font-size: 16px;
+              font-weiht: normal}
+              
+.sidemenu h1 i
+              {margin-right: 5px;
+               color: #8abc60;
+               font-size: larger}              
+
+.sidemenu ul  {margin: 0;
+              padding: 0;
+              list-style: none}
+              
+.sidemenu li a
+              {display: block;
+              padding: 10px;
+              border-top: solid 1px #dddddd;
+              color: #000000;
+              font-size: 14px;
+              text-decoration: none}
+              
+              
+              
+              
+.sidemenu li a:hover
+              {background-color: #eeeeee}  
+                          
+/*りかまるメニュー*/
+
+.secondmenu .rikatext  {
+              margin: auto;
+              font-size: 30px;
+              font-weight: normal;
+              background-image: url();
+              background-repeat: no-repeat;
+              background-position: 0 8px;
+              padding: 0;
+              clear: both;}
+                                      
+                          
+.secondmenu img {padding-top: 2px;
+              padding-left: 5px;
+              padding-bottom: 2px;
+              padding-right: 2px;
+              vertical-align: bottom;}
+
+
+.secondmenu ul  {margin: 0;
+               margin-bottom: 0;
+              padding: 0;
+              list-style: none}
+              
+.secondmenu li 
+              {display: block;
+              padding: 10px;
+              border-top: solid 1px #dddddd;
+              color: #000000;
+              font-size: 14px;
+              text-decoration: none;
+}
+              
+.secondimg    {margin-left: 5px;
+              margin-top: 4px}              
+
+/*新歓ページの遊び心*/
+.box11-1, .box11-2, .box11-3, .box11-4, .box11-5, .box11-6 {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.box11-2 {background: url(bg1.jpg) no-repeat center;
+		  background-size: cover;
+		  position: relative;
+		  height: 70vh;}
+.box11-3 {background: url(bg2.JPG) no-repeat center;
+		  background-size: cover;
+		  position: relative;
+		  height: 70vh;}		  
+.box11-6 {background: url(bg3.JPG) no-repeat center;
+		  background-size: cover;
+		  position: relative;
+		  height: 70vh;}
+
+.box11-1, .box11-4, .box11-5{
+          padding: 10px;
+          font-size: auto;}
+          
+.box11-5 {
+          padding-top: 40px;}          
+
+.box11:after {content: "";
+              display: block;
+              clear: both}
+              
+.box11-1, .box11-2, .box11-3, .box11-4, .box11-5, .box11-6{
+          float: left;
+          width: 50%}
+
+/*コピーライト*/
+.copyright p  {margin: 0;
+             color: #666666;
+             font-size: 14px} 
+             
+/*ページの先頭に戻る*/
+.PageTop     {font-size: 12px;
+             text-align: right;
+             margin-bottom: 10px;
+             padding-right: 15px}             
+             
+/*BOX Aの下に罫線を挿入(コンテンツのみ)*/
+.contents .boxA{border-bottom: solid 1px #dddddd}                
+             
+/*BOX5をバーの形に変更する*/
+.box5        {padding-top: 15px;
+              padding-bottom: 15px;
+              background-color: #dddddd}              
+
+/*ボックスの左右*/
+.boxA, .box4, .box5, .box6, .box7, .box8
+             {padding-left: 15px;
+             padding-right: 15px}
+                        
+
+/*ボックスの上下*/
+.boxA        {padding-top: 20px;
+             padding-bottom: 10px}             
+             
+.box4        {padding-top: 20px;
+             padding-bottom: 20px}             
+
+.box4-1      {padding-bottom: 20px}
+
+.box6, .box8 {padding-top: 20px}
+
+.box6-1, .box6-2, .box6-3, .box6-4, .box8-1, .box8-2, .box8-3
+             {padding-bottom: 10px;} 
+
+.box3 ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          }
+.box3 ul li {
+          position: relative;
+          }
+
+.box7        {padding-top: 25px;
+             padding-bottom: 25px}  
+
+/*[お問い合わせフォーム]ボタン*/
+.btns {
+          text-align: center;
+          padding-bottom: 20px;
+          margin: 30px 0;
+          border-bottom: 1px dotted #CCCCCC;
+          }
+
+.btns a {
+          font-size: 18px;
+          font-weight: bold;
+          text-decoration: none;
+          color: #FFFFFF;
+          background-color: #058BA9;
+          padding: 10px 20px;
+          border-radius: 5px;
+          background-image: linear-gradient(to bottom, #92CDDB, #058BA9);
+          border: 1px solid #058BA9;
+          box-shadow: 1px 1px 0 #9DDDED inset;
+          text-shadow: 0px -1px 0 #333333;
+          display: inline-block;
+          }
+
+#pageBodyMain .btns a:hover {
+          opacity: 0.7;
+          }
+
+
+
+
+/*############ 359px以下 ###############*/
+@media (max-width: 359px) {
+             
+/*サイト名*/
+.thema img     {width: 225px;
+              height: auto}
+              
+}             
+
+/*############ 599px以下 ############*/
+@media (max-width: 599px) {
+
+/*ナビゲーション*/
+.menu li a   {padding: 10px 7px;
+             font-size: 11px}
+
+/*キャッチコピー*/
+.chat       {padding: 5px 10px;
+              font-size: 12px}
+
+/*記事*/
+.shoukai h1     {font-size: 26px}
+
+.shoukai h2     {font-size: 20px}
+
+.shoukai .lead  {font-size: 16px}
+}
+
+/*########### 767px以下 ################*/  
+@media (max-width: 767px) {
+
+/*トグルボタン*/
+#menubtn      {padding: 6px 12px;
+              border: solid 1px #aaaaaa;
+              border-radius: 5px;
+              background-xolor: #ffffff;
+              position: absolute;
+              top: 20px;
+              right: 15px;
+              cursor: pointer}
+
+#menubtn:hover
+              {background-color: #dddddd}
+              
+#menubtn:focus
+              {outline: none}              
+
+#menubtn i    {color: #888888;
+              font-size: 18px}
+
+#menubtn span {display: inline-block;
+              text-indent: -9999px}
+
+/*ナビゲーションメニュー (縦並び)*/
+#menu         {display: none}
+
+.menu ul      {margin: 0;
+              padding: 0;
+              list-style: none}
+              
+.menu li      {width: 150px}
+              
+.menu li a     {display: block;
+               padding: 5px;
+               color: #000000;
+               font-size: 14px;
+               text-decoration: none}
+               
+               
+               
+.menu li a:hover
+               {background-color: #eeeeee}
+               
+                                              
+
+
+.box11-1, .box11-2, .box11-3, .box11-4, .box11-5, .box11-6
+              {width: 100%;}  
+
+}
+
+/*############## 768px以上 ##################*/
+@media (min-width: 768px) {
+
+/*トグルボタン*/
+#menubtn      {display: none}     
+
+/*ナビゲーション*/
+#menu         {display: block!important}
+
+.menu ul        {margin-top: 10px;
+                padding: 0;
+                list-style: none}
+                
+.menu li a      {display: block;
+                padding: 10px 15px;
+                font-size: 14px;
+                text-decoration: none}
+                
+.menu li a:hover{background-color: #eeeeee}
+
+.menu ul:after  {content: "";
+                display: block;
+                clear: both}
+                
+.menu ul li     {float: left;
+                width: auto;
+                border-left: solid 1px #CCCCCC;
+                padding: 0 2px}  
+                
+.menu ul li:first-child
+                {border-left: none}                 
+
+/*BOX1とBOX2を横に並べる設定*/
+.boxA:after     {content: "";
+                display: block;
+                clear: both}
+                
+.box1            {float: left;
+                  width: auto}
+                  
+.box2            {float: right;
+                  width: auto}                                 
+
+/*box4-1 とbox4-2を横に並べる設定*/
+.box4:after
+           {content: "";
+           display: block;
+           clear: both}
+           
+.box4-1    {float: left;
+           width: 70%;
+           padding-right: 35px;
+           -moz-box-sizing: border-box;
+           -webkit-box-sizing: border-box;
+           box-sizing: border-box}
+           
+.box4-2    {float: left;
+           width: 30%} 
+           
+/*BOX6-1、BOX6-2、BOX6-3、BOX6-4を横に並べる設定*/
+.box6:after {content: "";
+            display: block;
+            clear: both}
+            
+.box6-1     {float: left;
+            width: 23.5%;
+            margin-right: 2%}
+            
+.box6-2     {float: left;
+            width: 23.5%;
+            margin-right: 2%}
+           
+.box6-3     {float: left;
+            width: 23.5%;
+            margin-right: 2%}
+                        
+.box6-4     {float: left;
+            width: 23.5%}
+
+/*BOX7-1とBOX7-2を横に並べる設定*/
+.box7:after {content: "";
+            display: block;
+            clear: both}
+            
+.box7-1     {float: right;
+            width: 80%;
+            padding-left: 50px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box}
+            
+.box7-2     {float: left;
+            width: 20%}    
+            
+.box9-1     {float: left;
+            width: 100%;
+            padding-right: 50px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box}
+            
+.box9-2     {margin-top: 100px;
+             padding-top: 0;
+            float: right;
+            width: 40%}                
+  
+/*BOX8-1、BOX8-2、BOX8-3を横に並べる設定*/
+.box8:after {content: "";
+            display: block;
+            clear: both}
+            
+.box8-1     {float: left;
+            width: 23.5%;
+            margin-right: 2%}
+            
+.box8-2     {float: left;
+            width: 23.5%;
+            margin-right: 2%}
+           
+.box8-3     {float: left;
+            width: 23.5%}
+                        
+  
+  
+  
+           
+}
+
+/*##########  1190px以上 ###################*/
+@media (min-width: 1190px) {
+
+/*全体の横幅を固定*/
+.box3, .box4, .boxA-inner, .box5-inner, .box6, .box7, .topichole, .PageTop, .box8, .box9
+          {width: 1140px;
+          margin-left: auto;
+          margin-right: auto}
+
+/*BOXAの下に罫線を挿入*/
+.boxA      {margin-bottom: 20px;
+           border-bottom: solid 1px #dddddd}
+           
+
+}
+
+
